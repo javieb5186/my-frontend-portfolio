@@ -13,6 +13,12 @@ body {
   margin-top: 1vw;
   margin-bottom: 1vw;
   font-family: var(--reading-text);
+  color: var(--light-theme);
+}
+
+p {
+  font-size: 2vw;
+  line-height: 1.5;
 }
 
 header {
@@ -64,7 +70,7 @@ img {
 
 .main {
   grid-template-columns: 17vw 45vw auto;
-  height: 40vw;
+  height: 60vw;
 }
 
 .home-page > * {
@@ -99,10 +105,10 @@ aside.container nav {
 
 .home-title-text p {
   text-align: right;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
-.home-title-text h1 {
+h1 {
   font-size: 4vw;
   font-family: var(--display-text);
 }
@@ -117,6 +123,23 @@ aside.container nav {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+.root-container {
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.about-page section.container{
+  grid-template-columns: 17vw auto;
+  height: 50vw;
+}
+
+.about-text{
+  padding-left: 10vw;
+  align-self: center;
+}
+
+
 
 @media screen and (max-width: 1024px) {
   .main {
@@ -139,6 +162,10 @@ aside.container nav {
 
   aside.container p {
     align-self: center;
+  }
+
+  .about-page {
+    margin-top: 1vw;
   }
 
 }
@@ -192,5 +219,18 @@ aside.container nav {
     top: 0;
     right: 0;
     padding: 2vw;
+  }
+
+  .about-page section.container{
+    grid-template-columns: auto;
+    height: 40vw;
+  }
+  .about-text{
+    padding-left: 0;
+  }
+
+  .about-text > * {
+    text-align: center;
+    align-self: center;
   }
 }
