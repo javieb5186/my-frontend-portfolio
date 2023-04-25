@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <title>Javier Baylon</title>
-  <meta charset="UTF-8">
-  <!-- For testing purpose, REMOVE when live. -->
-  <!-- <meta http-equiv="refresh" content="3">  -->
-  <!-- -------------------------------------- -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="Javier Baylon, Full Stack Developer, Mobile Developer">
-  <meta name="description" content="A full stack and mobile developer for you.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Share+Tech+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <section class="home-page">
-    <header>Portfolio</header>
-    <section class="main container">
+  <head>
+    <title>Javier Baylon</title>
+    <meta charset="UTF-8">
+    <!-- For testing purpose, REMOVE when live. -->
+    <!-- <meta http-equiv="refresh" content="1">  -->
+    <!-- -------------------------------------- -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Javier Baylon, Full Stack Developer, Mobile Developer">
+    <meta name="description" content="A full stack and mobile developer for you.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Share+Tech+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="navigation-container">
+      <header>
+        <a href="#home">Portfolio</a>
+      </header>
+      <nav class="top-navigation">
+        <ul>
+          <li>/ Public</li>
+          <li><a href="#about" class="center-text"><span class="orange"> / </span> About </a></li>
+          <li><a href="#skills" class="center-text"><span class="orange"> / </span> Skills </a></li>
+          <li><a href="#projects" class="center-text"><span class="orange"> / </span> Projects </a></li>
+          <li><a href="#contact" class="center-text"><span class="orange"> / </span> Contact </a></li>
+        </ul>
+      </nav>
       <aside class="container">
         <p>
           Public
         </p>
         <div></div>
         <div></div>
-        <nav>
+        <nav class="side-navigation">
           <ul>
             <li><a href="#about" class="center-text"><span class="orange">#</span>About</a></li>
             <li><a href="#skills" class="center-text"><span class="orange">#</span>Skills</a></li>
@@ -34,31 +44,33 @@
           </ul>
         </nav>
       </aside>
-      <section class="container home-title-elements">
-        <p>&lt;h1&gt;</p>
-        <div></div>
-        <div></div>
-        <h1>Javier Baylon</h1>
-        <p>&lt;/h1&gt;</p>
-        <div></div>
-        <div></div>
-        <div></div>
-        <p>&lt;h3&gt;</p>
-        <div></div>
-        <div></div>
-        <h3>
-          Full Stack Dev.<br>
-          Mobile App Dev.<br>
-          Designer.<br>
-        </h3>
-        <p>&lt;/h3&gt;</p>
-        <div></div>
-        <div></div>
-      </section>
-      <section>
-        <img src="../images/profile-icon.png" alt="A picture of the Portfolio creater">
+    </section>
+    <section class="home-page">
+      <section class="main container">
+        <div class="hide-when-mobile"></div>
+        <section class="container home-title-text">
+          <p>&lt;h1&gt;</p>
+          <div></div>
+          <div></div>
+          <h1>Javier Baylon</h1>
+          <p>&lt;/h1&gt;</p>
+          <div></div>
+          <div></div>
+          <div></div>
+          <p>&lt;h3&gt;</p>
+          <div></div>
+          <div></div>
+          <h3>
+            Full Stack Dev.<br>
+            Mobile App Dev.<br>
+            Designer.<br>
+          </h3>
+          <p>&lt;/h3&gt;</p>
+          <div></div>
+        </section>
+        <div class="item3"></div>
+        <div style="display: none;"></div>
       </section>
     </section>
-  </section>
-</body>
+  </body>
 </html>
