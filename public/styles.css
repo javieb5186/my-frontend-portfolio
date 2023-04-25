@@ -17,17 +17,37 @@ body {
 
 header {
   font-family: var(--display-text);
-  font-size: 3vw;
   color: var(--light-theme);
+  font-size: 3vw;
 }
 
 a {
-  color: var(--light-theme);
   text-decoration-color: rgba(0, 0, 0, 0);
+  color: var(--light-theme);
 }
 
 img {
   width: 100%;
+  margin: auto;
+}
+
+.navigation-container {
+  position: fixed;
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+
+.navigation-container > * {
+  color: var(--light-theme);
+}
+
+.top-navigation {
+  display: none;
+}
+
+.top-navigation ul li{
+  display: inline;
+  font-size: 3vw;
 }
 
 .center-text {
@@ -53,11 +73,10 @@ img {
 
 aside.container {
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: 10vw auto;
 }
 
 aside.container p {
-  text-align: right;
   align-self: flex-end;
 }
 
@@ -69,24 +88,109 @@ aside.container nav {
   line-height: 8vw;
 }
 
-.home-title-elements {
-  grid-template-columns: 5vw auto;
+.home-title-text {
+  grid-template-columns: 10vw auto;
   grid-template-rows: auto auto auto auto auto auto auto auto;
 }
 
-.home-title-elements p {
-  text-align: right;
+.home-title-text > * {
   align-self: center;
+}
+
+.home-title-text p {
+  text-align: right;
   font-size: 1vw;
 }
 
-.home-title-elements h1 {
+.home-title-text h1 {
   font-size: 4vw;
   font-family: var(--display-text);
-  align-self: center;
 }
 
-.home-title-elements h3 {
+.home-title-text h3 {
   font-size: 3vw;
-  align-self: center;
+}
+
+.item3 {
+  background-image: url("../images/profile-icon.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    grid-template-columns: 17vw auto;
+    grid-template-rows: 40vw 40vw;
+    height: 80vw;
+  }
+  
+  .home-title-text {
+    grid-template-columns: auto auto;
+  }
+
+  .item3 {
+    grid-area: 2 / 2 / 2 / 2;
+  }
+
+  aside.container {
+    grid-template-rows: 20vw 40vw;
+  }
+
+  aside.container p {
+    align-self: center;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .main {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 80vw;
+  }
+  
+  .home-title-text {
+    grid-template-columns: auto auto;
+  }
+
+  .side-navigation { 
+    display: none;
+  }
+
+  .top-navigation {
+    display: contents;
+    text-align: center;
+  }
+
+  .navigation-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+  }
+
+  aside.container{
+    display: none;
+  }
+
+  .item3 {
+    grid-area: 1 / 1 / 1 / 1;
+    margin-top: 10vw;
+  }
+
+  .hide-when-mobile {
+    display: none;
+  }
+
+  section.navigation-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    padding: 2vw;
+  }
 }
