@@ -1,0 +1,92 @@
+:root {
+  --dark-theme: #1e1e1e;
+  --light-theme: #f3f3f3;
+  --orange-accent: #f9ad8e;
+  --display-text: 'Share Tech Mono', monospace;;
+  --reading-text: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: var(--dark-theme);
+  width: 97%;
+  margin: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  font-family: var(--reading-text);
+}
+
+header {
+  font-family: var(--display-text);
+  font-size: 3vw;
+  color: var(--light-theme);
+}
+
+a {
+  color: var(--light-theme);
+  text-decoration-color: rgba(0, 0, 0, 0);
+}
+
+img {
+  width: 100%;
+}
+
+.center-text {
+  align-self: center;
+}
+
+.orange {
+  color: var(--orange-accent);
+}
+
+.container {
+  display: grid;
+}
+
+.main {
+  grid-template-columns: 17vw 45vw auto;
+  height: 40vw;
+}
+
+.home-page > * {
+  color: var(--light-theme);
+}
+
+aside.container {
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+aside.container p {
+  text-align: right;
+  align-self: flex-end;
+}
+
+aside.container > * {
+  font-size: 2vw;
+}
+
+aside.container nav {
+  line-height: 8vw;
+}
+
+.home-title-elements {
+  grid-template-columns: 5vw auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+}
+
+.home-title-elements p {
+  text-align: right;
+  align-self: center;
+  font-size: 1vw;
+}
+
+.home-title-elements h1 {
+  font-size: 4vw;
+  font-family: var(--display-text);
+  align-self: center;
+}
+
+.home-title-elements h3 {
+  font-size: 3vw;
+  align-self: center;
+}
