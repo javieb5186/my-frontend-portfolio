@@ -201,6 +201,28 @@ li {
   font-size: 2vw;
 }
 
+.contact-page section.container {
+  grid-template-rows: 5vw 5vw 10vw auto;
+  height: auto;
+  padding-left: 17vw;
+}
+
+.contact-page section.container button {
+  width: 15%;
+  margin: auto;
+  font-size: 2vw;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+#message {
+  height: 20vw;
+}
+
 
 @media screen and (max-width: 1024px) {
   .main {
@@ -324,8 +346,8 @@ li {
 
   .card1, .card2, .card3 {
     grid-column-start: 1;
-    width: 100%;
-    margin: 5vw 0;
+    width: 50%;
+    margin: 5vw auto;
   }
   .card1 {
     grid-row-start: 2;
@@ -350,7 +372,7 @@ li {
 
   .projects-page section.container{
     margin: 5vw 0;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     height: auto;
   }
@@ -358,23 +380,29 @@ li {
   .projects-page section.container .text.container {
     grid-template-columns: auto;
     grid-template-rows: 5vw 5vw auto 5vw;
+    grid-row-start: 2;
+    text-align: center;
   }
 
-  .projects-page section.container section.container .first {
-    grid-row-start: 1;
+  .projects-page section.container section.container .first{
+    grid-column: 1 / 1;
+    width: 70%;
+  }
+
+  .projects-page section.container section.container div {
     width: 50%;
     margin: auto;
+    grid-row: 1;
   }
 
-  .projects-page section.container section.container .second {
-    grid-row-start: 2;
-    width: 30%;
-    margin: auto;
+  .contact-page section.container {
+    padding-left: 0;
   }
 
-  .projects-page section.container section.container .third {
-    grid-row-start: 3;
-    width: 30%;
-    margin: auto;
+  .contact-page section.container h2 {
+    text-align: center;
+  }
+  .contact-page section.container p {
+    text-align: center;
   }
 }
