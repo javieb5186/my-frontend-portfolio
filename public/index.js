@@ -1,3 +1,5 @@
+// I used javascript to quickly make text changes based on project selection.
+
 document.getElementById("project-title").innerHTML = "Accessibility Project";
 document.getElementById("project-text").innerHTML = "Horiseon, the company that reached " +  
 "out to me to make their website more accessible friendly. In addition to accessibility " + 

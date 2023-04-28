@@ -10,9 +10,11 @@
     <meta name="keywords" content="Javier Baylon, Full Stack Developer, Mobile Developer">
     <meta name="description" content="A full stack and mobile developer for you.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- A live link to google fonts. Is always accessible when connected to the internet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Share+Tech+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="reset.css">
+    <!-- -------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -21,12 +23,12 @@
         <a href="#home">Portfolio</a>
       </header>
       <nav class="top-navigation">
-        <ul>
+        <ul class="center-child-text">
           <li><span class="orange"> / </span> Public</li>
-          <li><a href="#about" class="center-text"><span class="orange"> / </span> About </a></li>
-          <li><a href="#skills" class="center-text"><span class="orange"> / </span> Skills </a></li>
-          <li><a href="#projects" class="center-text"><span class="orange"> / </span> Projects </a></li>
-          <li><a href="#contact" class="center-text"><span class="orange"> / </span> Contact </a></li>
+          <li><a href="#about"><span class="orange"> / </span> About </a></li>
+          <li><a href="#skills"><span class="orange"> / </span> Skills </a></li>
+          <li><a href="#projects"><span class="orange"> / </span> Projects </a></li>
+          <li><a href="#contact"><span class="orange"> / </span> Contact </a></li>
         </ul>
       </nav>
       <aside class="container">
@@ -36,11 +38,11 @@
         <div></div>
         <div></div>
         <nav class="side-navigation">
-          <ul>
-            <li><a href="#about" class="center-text"><span class="orange">#</span>About</a></li>
-            <li><a href="#skills" class="center-text"><span class="orange">#</span>Skills</a></li>
-            <li><a href="#projects" class="center-text"><span class="orange">#</span>Projects</a></li>
-            <li><a href="#contact" class="center-text"><span class="orange">#</span>Contact</a></li>
+          <ul class="center-child-text">
+            <li><a href="#about"><span class="orange">#</span>About</a></li>
+            <li><a href="#skills"><span class="orange">#</span>Skills</a></li>
+            <li><a href="#projects"><span class="orange">#</span>Projects</a></li>
+            <li><a href="#contact"><span class="orange">#</span>Contact</a></li>
           </ul>
         </nav>
       </aside>
@@ -49,7 +51,7 @@
       <section class="home-page" id="home">
         <section class="main container">
           <div class="hide-when-mobile"></div>
-          <section class="container home-title-text">
+          <section class="container home-title-text center-child-text">
             <p>&lt;h1&gt;</p>
             <div></div>
             <div></div>
@@ -70,7 +72,6 @@
             <div></div>
           </section>
           <div class="item3"></div>
-          <div style="display: none;"></div>
         </section>
       </section>
       <section class="about-page" id="about">
@@ -150,10 +151,10 @@
             </p>
             <p><a href="" id="project-button" target="_blank">Link to Project</a></p>
           </section>
-          <section class="container ">
-            <div class="first"><button type="button" onclick="changeToProject1()"><img src="../images/horiseon.png" alt="Best Project" height="50%"></button></div>
-            <div class="second"><button type="button" onclick="changeToProject2()"><img src="../images/unity-project-pic.png" alt="Best Project"></button></div>
-            <div class="third"><button type="button" onclick="changeToProject3()"><img src="../images/front-end-journey.png" alt="Best Project"></button></div>
+          <section class="container">
+            <div class="first-project"><button type="button" onclick="changeToProject1()"><img src="../images/horiseon.png" alt="Best Project" height="50%"></button></div>
+            <div class="second-project"><button type="button" onclick="changeToProject2()"><img src="../images/unity-project-pic.png" alt="Best Project"></button></div>
+            <div class="third-project"><button type="button" onclick="changeToProject3()"><img src="../images/front-end-journey.png" alt="Best Project"></button></div>
           </section>
         </section>
       </section>
@@ -164,13 +165,13 @@
             and I'll do my quickest to respond to you. 
           </p><br>
           <p>
-            <a href="mailto:" style="text-align: center;" id="email-button"> Email </a>
+            <a href="mailto:" id="email-button"> Email </a>
           </p>
         </section>
       </section>
       <footer class="footer">
-        <section class="container">
-          <p style="text-align: center; margin-top: 5vw;">Website made by me. Javier</p>
+        <section class="container center-child-text">
+          <p style="text-align: center;">Website made by me. Javier</p>
         </section>
       </footer>
     </section>
