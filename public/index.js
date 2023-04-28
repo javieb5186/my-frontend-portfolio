@@ -1,11 +1,6 @@
 // I used javascript to quickly make text changes based on project selection.
 
-document.getElementById("project-title").innerHTML = "Accessibility Project";
-document.getElementById("project-text").innerHTML = "Horiseon, the company that reached " +  
-"out to me to make their website more accessible friendly. In addition to accessibility " + 
-"I rearranged and added code to follow best practices to pass down to my new fellow developers. " +
-"Clients were happy and they couldn't have asked for better results.";
-document.getElementById("project-button").innerHTML = "Go to site";
+changeToProject1();
 
 function changeToProject1() {
   document.getElementById("project-title").innerHTML = "Accessibility Project";
